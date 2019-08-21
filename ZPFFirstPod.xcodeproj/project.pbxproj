@@ -14,6 +14,9 @@
 		CDFA4679230C073A00FA2C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDFA4677230C073A00FA2C00 /* LaunchScreen.storyboard */; };
 		CDFA467C230C073A00FA2C00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFA467B230C073A00FA2C00 /* main.m */; };
 		CDFA4685230C077A00FA2C00 /* MyTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFA4684230C077A00FA2C00 /* MyTestObject.m */; };
+		CDFA46AD230D0A0B00FA2C00 /* TestCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFA46AC230D0A0B00FA2C00 /* TestCtl.m */; };
+		CDFA46B0230D0A1900FA2C00 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFA46AF230D0A1900FA2C00 /* TestModel.m */; };
+		CDFA46B3230D0A2800FA2C00 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFA46B2230D0A2800FA2C00 /* TestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		CDFA467B230C073A00FA2C00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDFA4683230C077A00FA2C00 /* MyTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTestObject.h; sourceTree = "<group>"; };
 		CDFA4684230C077A00FA2C00 /* MyTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTestObject.m; sourceTree = "<group>"; };
+		CDFA46AB230D0A0B00FA2C00 /* TestCtl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCtl.h; sourceTree = "<group>"; };
+		CDFA46AC230D0A0B00FA2C00 /* TestCtl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCtl.m; sourceTree = "<group>"; };
+		CDFA46AE230D0A1900FA2C00 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		CDFA46AF230D0A1900FA2C00 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		CDFA46B1230D0A2800FA2C00 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		CDFA46B2230D0A2800FA2C00 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +87,40 @@
 		CDFA4682230C076400FA2C00 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CDFA46A8230D09F800FA2C00 /* Ctl */,
+				CDFA46AA230D09F800FA2C00 /* Models */,
+				CDFA46A9230D09F800FA2C00 /* Views */,
 				CDFA4683230C077A00FA2C00 /* MyTestObject.h */,
 				CDFA4684230C077A00FA2C00 /* MyTestObject.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		CDFA46A8230D09F800FA2C00 /* Ctl */ = {
+			isa = PBXGroup;
+			children = (
+				CDFA46AB230D0A0B00FA2C00 /* TestCtl.h */,
+				CDFA46AC230D0A0B00FA2C00 /* TestCtl.m */,
+			);
+			path = Ctl;
+			sourceTree = "<group>";
+		};
+		CDFA46A9230D09F800FA2C00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDFA46B1230D0A2800FA2C00 /* TestView.h */,
+				CDFA46B2230D0A2800FA2C00 /* TestView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDFA46AA230D09F800FA2C00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDFA46AE230D0A1900FA2C00 /* TestModel.h */,
+				CDFA46AF230D0A1900FA2C00 /* TestModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFA46B3230D0A2800FA2C00 /* TestView.m in Sources */,
+				CDFA46AD230D0A0B00FA2C00 /* TestCtl.m in Sources */,
 				CDFA4671230C073900FA2C00 /* ViewController.m in Sources */,
 				CDFA467C230C073A00FA2C00 /* main.m in Sources */,
+				CDFA46B0230D0A1900FA2C00 /* TestModel.m in Sources */,
 				CDFA4685230C077A00FA2C00 /* MyTestObject.m in Sources */,
 				CDFA466E230C073900FA2C00 /* AppDelegate.m in Sources */,
 			);
