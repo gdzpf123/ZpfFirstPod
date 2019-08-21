@@ -10,4 +10,13 @@
 
 @implementation MyTestObject
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"123");
+    }
+    return self;
+}
+
 @end
